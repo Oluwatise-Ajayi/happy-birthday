@@ -25,7 +25,7 @@ const Page2 = () => (
         size="lg"
         style={{
           fontFamily: '"Playfair Display", "Merriweather", serif',
-          color: '#5d4037',
+          color: '#e65100', // Brighter orange color
           whiteSpace: 'pre-line',
           lineHeight: 1.8,
         }}

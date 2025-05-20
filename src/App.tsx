@@ -8,9 +8,33 @@ import Page3 from './pages/Page3';
 import Page4 from './pages/Page4';
 import Page5 from './pages/Page5';
 import Page6 from './pages/Page6';
+import Page7 from './pages/Page7';
+import Page8 from './pages/Page8';
+import Page9 from './pages/Page9';
+import Page10 from './pages/Page10';
+import Page11 from './pages/Page11';
+import Page12 from './pages/Page12';
+import Page13 from './pages/Page13';
+import Page14 from './pages/Page14';
+import Page15 from './pages/Page15';
+import Page16 from './pages/Page16';
+import Page17 from './pages/Page17';
+import Page18 from './pages/Page18';
+import Page19 from './pages/Page19';
+import Page20 from './pages/Page20';
+import Page21 from './pages/Page21';
+import Page22 from './pages/Page22';
+import Page23 from './pages/Page23';
+import Page24 from './pages/Page24';
+import Page25 from './pages/Page25';
 import './App.css';
 
-const pages = [Page1, Page2, Page3, Page4, Page5, Page6];
+const pages = [
+  Page1, Page2, Page3, Page4, Page5, Page6, Page7, Page8, Page9, Page10,
+  Page11, Page12, Page13, Page14, Page15, Page16, Page17, Page18, Page19, Page20,
+  Page21, Page22, Page23, Page24, Page25
+];
+
 
 type BalloonProps = {
   x: number;
@@ -188,7 +212,7 @@ function App() {
         variant="light"
         size="lg"
         aria-label="Previous page"
-        style={{ position: 'fixed', left: 16, top: '50%', transform: 'translateY(-50%)', zIndex: 20, opacity: page === 0 ? 0.5 : 1 }}
+        style={{ position: 'fixed', left: 16, top: '50%', transform: 'translateY(-50%)', zIndex: 20, opacity: page === 0 ? 0.3 : 0.6 }}
         onClick={() => setPage((p) => Math.max(0, p - 1))}
         disabled={page === 0}
       >
@@ -199,7 +223,7 @@ function App() {
         variant="light"
         size="lg"
         aria-label="Next page"
-        style={{ position: 'fixed', right: 16, top: '50%', transform: 'translateY(-50%)', zIndex: 20, opacity: page === pages.length - 1 ? 0.5 : 1 }}
+        style={{ position: 'fixed', right: 16, top: '50%', transform: 'translateY(-50%)', zIndex: 20, opacity: page === pages.length - 1 ? 0.3 : 0.6 }}
         onClick={() => setPage((p) => Math.min(p + 1, pages.length - 1))}
         disabled={page === pages.length - 1}
       >
