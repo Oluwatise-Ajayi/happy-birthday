@@ -24,9 +24,10 @@ const Page2 = () => (
       <Text
         size="lg"
         style={{
-          fontFamily: '"Shadows Into Light", "Merriweather", serif',
+          fontFamily: '"Playfair Display", "Merriweather", serif',
           color: '#5d4037',
           whiteSpace: 'pre-line',
+          lineHeight: 1.8,
         }}
       >
         {letter}

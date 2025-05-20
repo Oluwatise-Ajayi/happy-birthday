@@ -7,9 +7,10 @@ import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
 import Page4 from './pages/Page4';
 import Page5 from './pages/Page5';
+import Page6 from './pages/page6';
 import './App.css';
 
-const pages = [Page1, Page2, Page3, Page4, Page5];
+const pages = [Page1, Page2, Page3, Page4, Page5, Page6];
 
 type BalloonProps = {
   x: number;
@@ -27,7 +28,7 @@ function StarsBackground() {
     delay: Math.random() * 5,
   }));
   return (
-    <div style={{ position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none' }} aria-hidden>
+    <div style={{ position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none', background: 'rgba(0, 0, 0, 0.05)' }} aria-hidden>
       {stars.map((star, i) => (
         <motion.div
           key={i}
@@ -41,8 +42,8 @@ function StarsBackground() {
             width: star.size,
             height: star.size,
             borderRadius: '50%',
-            background: 'white',
-            boxShadow: `0 0 6px 2px #fff`,
+            background: '#ffd700',
+            boxShadow: `0 0 6px 2px rgba(255, 215, 0, 0.5)`,
           }}
         />
       ))}
